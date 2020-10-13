@@ -7,13 +7,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <data>
+      <variable
+          name="myName"
+          type="com.example.aboutme.MyName"/>
+    </data>
+
     <TextView
         android:id="@+id/name_text"
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center" />
 
     <EditText
@@ -45,7 +51,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textAlignment="center"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:text="@={myName.nickname}"/>
 
     <ImageView
         android:id="@+id/start_image"
