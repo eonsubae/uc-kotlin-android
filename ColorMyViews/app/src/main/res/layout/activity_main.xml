@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -28,26 +29,26 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/box_two"
-        app:layout_constraintEnd_toStartOf="@+id/box_three"
+        app:layout_constraintEnd_toStartOf="@+id/box_three_text"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
 
     <TextView
-        android:id="@+id/box_three"
+        android:id="@+id/box_three_text"
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="16dp"
         android:text="@string/box_three"
-        app:layout_constraintBottom_toTopOf="@+id/box_four"
+        app:layout_constraintBottom_toTopOf="@+id/box_four_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
         app:layout_constraintTop_toTopOf="@+id/box_two_text" />
 
     <TextView
-        android:id="@+id/box_four"
+        android:id="@+id/box_four_text"
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -55,13 +56,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/box_four"
-        app:layout_constraintBottom_toTopOf="@+id/box_five"
+        app:layout_constraintBottom_toTopOf="@+id/box_five_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
-        app:layout_constraintTop_toBottomOf="@+id/box_three" />
+        app:layout_constraintTop_toBottomOf="@+id/box_three_text" />
 
     <TextView
-        android:id="@+id/box_five"
+        android:id="@+id/box_five_text"
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -72,6 +73,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/box_two_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
-        app:layout_constraintTop_toBottomOf="@+id/box_four" />
+        app:layout_constraintTop_toBottomOf="@+id/box_four_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
